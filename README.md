@@ -1,20 +1,30 @@
 <p align="center" >
     <img src="https://imgur.com/Djb5EXk.png" width="200px" />
 </p>
-<h2 align="center">:zap: Webpack-docs :zap:</h2>
+<h2 align="center">:zap: wpk :zap:</h2>
 
 <p align="center" >
 Webpack documentation on your terminal on go
 </p>
 
 
-# `$ webpack-docs [propertyname]`
+# `$ wpk [commands]`
 
 
 
 ### :warning: This package is still not published
+## Installation
+```bash
+$ npm i -g wpk 
+```
+> It is recommended to install it globally else some commands like `save` wont work properly
 
-## Why
+## Approach
+Do a monorepo for this project
+
+# Commands
+## 1. `wpk docs`
+
 Webpack is a awesome bundler which comes with handy configurations. Refering to docs for details about each confgi property is pretty common and frequent step. 
 
 **Currently**, if we are in terminal and not sure about what a particular webpack config property does then we need to check the docs and other sites.
@@ -57,12 +67,11 @@ I have implemented this feature in this just for demo purpose and we don't need 
 
 
 ```
-
-## Alternatives
+**Alternatives**
 
 Checking the docs :laughing:
 
-## Current Implementation
+**Current Implementation**
 
 The implementation can be improved as I have manually extracted the points from the docs. Also, I have made a curated list of command in a js object where its `propertyname : explaination `
 In order to highlight the code and any notes or quotes, created a utility method to implement markdown like support for the explanation
@@ -78,15 +87,27 @@ for quotes
 >>> QUOTES OR NOTES HERE >>>
 ```
 
-## How the commands will
-### ` $ webpack-doc [The-config-property-you-want-to-know]  `
-### ` $ webpack-doc --list `
+### Other sub commands
+**` $ wpk docs --list `**
 List down all the properties whose docs are available in this package
 
-### ` $ webpack-doc --i `
+**` $ wpk doc --i `**
 To search and get the docs in an interactive way
 
 
-### **For On the go without installing the package**
+## 2. `wpk save`:
+It will save the webpack configuration file in a global directory inorder to load that later quickly
+### Sub commands
 
-### ` $ npx webpack-doc  [The-config-property-you-want-to-know]  `
+**`wpk save [src--optional]`**
+mention the source here
+
+**`wpk save [alias-name]`**
+Give a alternate name for the config file in order to solve the duplicate issues
+
+**`wpk load`**
+it will list down the available configs file present
+
+**`wpk load [alias-name]`**
+load the specific config file
+
