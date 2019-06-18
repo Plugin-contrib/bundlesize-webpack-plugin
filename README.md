@@ -4,7 +4,7 @@
 <h2 align="center">:zap: wpk :zap:</h2>
 
 <p align="center" >
-Webpack documentation on your terminal on go
+Trying to cover the some of supporting eco of the webpack in here
 </p>
 
 
