@@ -72,7 +72,7 @@ I have implemented this feature in this just for demo purpose and we don't need 
 Checking the docs :laughing:
 
 **Current Implementation**
-### > This md alternate can be uploaded as seperate package ? think you boi !!!
+> ### This md alternate can be uploaded as seperate package ? think you boi !!!
 
 The implementation can be improved as I have manually extracted the points from the docs. Also, I have made a curated list of command in a js object where its `propertyname : explaination `
 In order to highlight the code and any notes or quotes, created a utility method to implement markdown like support for the explanation
