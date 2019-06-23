@@ -1,20 +1,27 @@
 {
   "name": "webpack-plugin-bundlesize",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "[WIP] webpack plugin to warn when size increases.",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anikethsaha/webpack-plugin-bundlesize.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack-plugin",
+    "webpack",
+    "bundle",
+    "bundle-size",
+    "webpack"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anikethsaha/webpack-plugin-bundlesize/issues"
   },
-  "homepage": "https://github.com/anikethsaha/webpack-plugin-bundlesize#readme"
+  "homepage": "https://github.com/anikethsaha/webpack-plugin-bundlesize#readme",
+  "dependencies": {
+    "prettycli": "^1.4.3"
+  }
 }
