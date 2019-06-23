@@ -40,7 +40,7 @@ const webpackBundleSize = require("webpack-plugin-bundlesize")
 3. `Options` - Optional
 ```js
 {
-    sizeLimit : your-size-in-KB // Default is 3
+    sizeLimit : your-size-in-KB // Default is 10 KB
 }
 ```
 
