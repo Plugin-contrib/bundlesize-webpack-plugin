@@ -6,10 +6,11 @@
 <p align="center" >
     <img src="https://imgur.com/A2YgC4S.png" width="400px" />
 </p>
-<h1  align="center"> webpack-plugin-bundlesize 📦 </h1>
+<h1  align="center"> webpack-plugin-bundlesize </h1>
 
 <p align="center" >
-Show with plugin or loader is being run currently in CLI
+Checks your bundle size and Better warnings and suggestions
+
 </p>
 
 
