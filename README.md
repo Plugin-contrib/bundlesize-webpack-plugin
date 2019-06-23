@@ -1,5 +1,4 @@
-> # WIP
-> ## The package is still in development stage
+> **WIP :warning: The package is still in development stage**
 
 
 
