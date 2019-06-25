@@ -23,11 +23,12 @@ More like a concept kind of thing
 ## Usage
 1. **Installation**
 ```bash
-$ npm i npm i anikethsaha/webpack-plugin-bundlesize#micro-plugin-development --save-dev
+$ npm i npm i anikethsaha/webpack-plugin-bundlesize#micro-plugin-development
+```
 
 **If not installed in this way then**
 
-better clone the `micro-plugin-developement` branch , link it then use it
+if so better clone the `micro-plugin-developement` branch , link it then use it
 
 
 2. In your webpack config
