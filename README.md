@@ -1,6 +1,7 @@
 > **WIP :warning: The package is still in development stage**
 
-
+## Please Check the [Micro-Plugin Development branch](https://www.npmjs.com/package/webpack-plugin-bundlesize) For details about micro plugins
+**Micro Plugins is still in WIP too would love the feedback over that**
 
 <p align="center" >
     <img src="https://imgur.com/A2YgC4S.png" width="400px" />
