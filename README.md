@@ -1,18 +1,23 @@
 > **WIP :warning: The package is still in development stage**
 
-
+**Do help with your awesome contributions and issues**
 
 <p align="center" >
     <img src="https://imgur.com/A2YgC4S.png" width="400px" />
 </p>
 <h1  align="center"> webpack-plugin-bundlesize </h1>
+<h1  align="center"> Micro Plugins for webpack-plugin-bundlesize  </h1>
+
+
 
 <p align="center" >
-Checks your bundle size and Better warnings and suggestions
-
+This branch supports the development and implementation of micro plugins in this webpack plugin
+More like a concept kind of thing
 </p>
 
 
+
+:smile:
 
 
 ## Usage
@@ -39,22 +44,49 @@ const webpackBundleSize = require("webpack-plugin-bundlesize")
 3. `Options` - Optional
 ```js
 {
-    sizeLimit : your-size-in-KB // Default is 10 KB
+    sizeLimit : your-size-in-KB // Default is 10 KB,
+    microPlugins : [
+        // Your sweet little micro plugins here ....
+    ]
 }
 ```
 
 
+# Micro Plugin Development Guide
+## Refer the `examples/micro-plugins for some examples`
+
+Instead of **`apply`** method for webpack plugins, I changed it to **`commit`** method
+
+List of hooks available for this (as of now)
+- `onSizeExceed`
+
+```js
+microHandlerResponse.onSizeExceed.tap("WebpackSizeExceedMicroPLugin",res => {
+    console.log("res",res)
+})
+```
+
+- `onSizeSafe`
+
+```js
+microHandlerResponse.onSizeSafe.tap("WebpackSizeSafeMicroPLugin",res => {
+    console.log("res",res)
+})
+```
+
+- `onSizeWarn`
+```js
+microHandlerResponse.onSizeWarn.tap("WebpackSizeWarnMicroPLugin",res => {
+    console.log("res",res)
+})
+```
+
+
+**Few More comming soon like beforeRun,error etc...**
+
+
+
 
 ## TODO
-- [ ] To implement the current in watchRun hook
-
-- [ ] To recommend some optimizations when size exceeding
-
-- [ ] To implement the logo and make the looks better
-
-- [ ] To suggest optmizations
-   - [ ] read the config and check whether the splitchunk is implemented or not
-   - [ ] Minify plugin
-   - [ ] Codespliting suggestion
-
+- Better Structure May be !
 - [ ] Typescript Migration
