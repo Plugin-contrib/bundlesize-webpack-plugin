@@ -2,6 +2,9 @@
 
 **Do help with your awesome contributions and issues**
 
+**Micro Plugins is still in WIP too would love the feedback over that**
+
+
 <p align="center" >
     <img src="https://imgur.com/A2YgC4S.png" width="400px" />
 </p>
