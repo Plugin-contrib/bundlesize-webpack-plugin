@@ -33,28 +33,22 @@ if so better clone the `micro-plugin-developement` branch , link it then use it
 
 2. In your webpack config
 **webpack.config.js** (Your webpack config file)
-```js
-const webpackBundleSize = require("webpack-plugin-bundlesize")
 
-...
-    plugins: [
-        new webpackBundleSize(options),
-        ...
-    ],
 
-...  // rest of your configuration
+<p align="center">
+<img src="https://imgur.com/ZaKqM28.png" alt="code" />
+</p>
 
-```
 
 3. `Options` - Optional
-```js
-{
-    sizeLimit : your-size-in-KB // Default is 10 KB,
-    microPlugins : [
-        // Your sweet little micro plugins here ....
-    ]
-}
-```
+
+
+
+<p align="">
+<img src="https://imgur.com/e3o3SIn.png" alt="code" />
+</p>
+
+
 
 
 # Micro Plugin Development Guide
@@ -65,26 +59,22 @@ Instead of **`apply`** method for webpack plugins, I changed it to **`commit`** 
 List of hooks available for this (as of now)
 - `onSizeExceed`
 
-```js
-microHandlerResponse.onSizeExceed.tap("WebpackSizeExceedMicroPLugin",res => {
-    console.log("res",res)
-})
-```
+
+<img src="https://imgur.com/O75j2Zd.png" alt="code" />
+
+
 
 - `onSizeSafe`
 
-```js
-microHandlerResponse.onSizeSafe.tap("WebpackSizeSafeMicroPLugin",res => {
-    console.log("res",res)
-})
-```
+
+<img src="https://imgur.com/3lQkRQH.png" alt="code" />
+
+
+
 
 - `onSizeWarn`
-```js
-microHandlerResponse.onSizeWarn.tap("WebpackSizeWarnMicroPLugin",res => {
-    console.log("res",res)
-})
-```
+
+<img src="https://imgur.com/UcI4mJF.png" alt="code" />
 
 
 **Few More comming soon like beforeRun,error etc...**
@@ -93,5 +83,19 @@ microHandlerResponse.onSizeWarn.tap("WebpackSizeWarnMicroPLugin",res => {
 
 
 ## TODO
-- Better Structure May be !
+- [ ] Monorepo(s) for builtin microplugin
+
+- [ ] Typescript Migration
+
+- [ ] To implement the current in watchRun hook
+
+- [ ] To recommend some optimizations when size exceeding - **MicroPlugin**
+
+- [ ] To implement the logo and make the looks better
+
+- [ ] To suggest optmizations **MicroPlugin List**
+   - [ ] read the config and check whether the splitchunk is implemented or not
+   - [ ] Minify plugin
+   - [ ] Codespliting suggestion
+
 - [ ] Typescript Migration
