@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/anikethsaha/webpack-plugin-bundlesize#readme",
   "dependencies": {
-    "prettycli": "^1.4.3"
+    "prettycli": "^1.4.3",
+    "tapable": "^1.1.3"
   }
 }
