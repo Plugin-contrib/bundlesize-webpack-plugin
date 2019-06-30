@@ -94,8 +94,9 @@ List of hooks available for this (as of now)
 - [ ] To implement the logo and make the looks better
 
 - [ ] To suggest optmizations **MicroPlugin List**
-   - [ ] read the config and check whether the splitchunk is implemented or not
-   - [ ] Minify plugin
-   - [ ] Codespliting suggestion
 
-- [ ] Typescript Migration
+   - [ ] read the config and check whether the splitchunk is implemented or not
+   
+   - [ ] Minify plugin
+   
+   - [ ] Codespliting suggestion
