@@ -1,0 +1,16 @@
+{
+  "name": "aligator-webpack-plugin-demo",
+  "version": "1.0.0",
+  "description": "this is the demo project for the aligator.io post 'creating a custom webpack plugin'",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node bin/bundle.js ",
+    "build": "webpack "
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "4.41.0",
+    "webpack-cli": "3.3.9"
+  },
+  "keywords": []
+}
